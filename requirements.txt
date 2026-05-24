@@ -1,0 +1,18 @@
+### Add more library
+### jsonpatch, jsonpointer cause json_helper.py required
+### pymssql-py38 cause pymssql is deprecated
+#add new library 16-11-2023 : keyboard: pip install keyboard
+
+openpyxl
+requests
+jsonpatch
+robotframework
+robotframework-databaselibrary
+robotframework-jsonlibrary
+robotframework-requests
+robotframework-seleniumlibrary
+robotframework-debuglibrary  
+robotframework-jsonschemalibrary
+selenium
+pyyaml
+pymysql
