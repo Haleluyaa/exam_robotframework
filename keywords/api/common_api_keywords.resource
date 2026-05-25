@@ -21,7 +21,7 @@ Send request to post xxx api
     RETURN    ${res_json}
 
 Send request to get xxx api
-    [Arguments]    ${domain}    ${endpoint}    ${queryparam}
+   [Arguments]    ${domain}    ${endpoint}    ${queryparam}
     ${header}=   Create Dictionary    Content-Type=Application/json
         ...    X-Channal=MANUAL
         ...    X-Request-ID=   

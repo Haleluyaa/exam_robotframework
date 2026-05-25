@@ -1,12 +1,14 @@
 *** Settings ***
 Resource    ../keywords/api/common_api_keywords.resource
 Resource    ../keywords/web/common_web_keywords.resource
-Variables    ../../resources/configs/${env}/domain.yaml
-Variables    ../../resources/configs/service_endpoint.yaml
-Variables    ../../resources/configs/${env}/channel_authen.yaml
+Variables    ../resources/configs/uat/domain.yaml
+Variables    ../resources/configs/service_endpoint.yaml
+Variables    ../resources/configs/uat/channel_authen.yaml
+Variables    ../resources/testdata/uat/tc01_api.yaml
 
 *** Variables ***
 ${env}    uat
+
 *** Test Cases ***
 Test Open Microsoft Edge Browser
     [Documentation]    robot framework can open url by edge browser 
@@ -18,5 +20,5 @@ Test Open Chrome Browser
 
 TC01 Test Post /payments/v1/crossborder/moneyGram/withdrawal/inquiryProduct 
     [Documentation]    robotframework-requestLibrary test
-    Send request to post xxx api    channel=atmi    domain=
+    ${res}=    Send request to post xxx api    channel=${atmi}    domain=${eapi_gw}    endpoint=${v1CustomerServiceAlertsRegistration}    request_data=${TC01}
 
