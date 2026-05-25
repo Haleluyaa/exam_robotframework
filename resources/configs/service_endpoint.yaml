@@ -1,1 +1,2 @@
 v1CustomerServiceAlertsRegistration: /v1/customerServices/alerts/registration
+ent_MS_MoneyGram_Withdrawal_InquiryProduct: /payments/v1/crossborder/moneyGram/withdrawal/inquiryProduct

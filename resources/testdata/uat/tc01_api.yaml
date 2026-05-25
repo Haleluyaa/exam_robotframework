@@ -1,0 +1,17 @@
+TC01: 
+ agentID: 43801059 
+ agentSequence : 03  
+ token : TEST  
+ language : th  
+ timeStamp : 2025-10-06T13:57:04.733+07:00  
+ apiVersion : 1512  
+ clientSoftwareVersion : 1.0  
+ channelType : ATM  
+ targetAudience : CONSUMER_FACING  
+ receiveCountry : THA  
+ thirdPartyType : NONE  
+ receiveCurrency : THB  
+ amount : 114.57 
+ productType : RCV  
+ consumerId : 0  
+ formFreeStaging : false
